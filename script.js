@@ -60,6 +60,7 @@
       'rsvp.name': 'Your Name',
       'rsvp.mobile': 'Mobile Number',
       'rsvp.guests': 'Number of Guests',
+      'rsvp.selectGuests': 'Select',
       'rsvp.attending': 'I will be attending',
       'rsvp.submit': 'Send RSVP',
       'rsvp.success.title': 'Thank You!',
@@ -123,6 +124,7 @@
       'rsvp.name': '\u0B89\u0B99\u0BCD\u0B95\u0BB3\u0BCD \u0BAA\u0BC6\u0BAF\u0BB0\u0BCD',
       'rsvp.mobile': '\u0B95\u0BC8\u0BAF\u0B9F\u0BC8 \u0B8E\u0BA3\u0BCD',
       'rsvp.guests': '\u0BB5\u0BB0\u0BC1\u0B95\u0BC8\u0BAF\u0BBE\u0BB3\u0BB0\u0BCD\u0B95\u0BB3\u0BBF\u0BA9\u0BCD \u0B8E\u0BA3\u0BCD\u0BA3\u0BBF\u0B95\u0BCD\u0B95\u0BC8',
+      'rsvp.selectGuests': '\u0BA4\u0BC7\u0BB0\u0BCD\u0BB5\u0BC1 \u0B9A\u0BC6\u0BAF\u0BCD\u0BAF\u0B95\u0BCD\u0B95\u0BC2\u0B9F\u0BBF\u0BAF\u0BA4\u0BC1',
       'rsvp.attending': '\u0BA8\u0BBE\u0BA9\u0BCD \u0B95\u0BB2\u0BA8\u0BCD\u0BA4\u0BC1 \u0B95\u0BCA\u0BB3\u0BCD\u0BB5\u0BC7\u0BA9\u0BCD',
       'rsvp.submit': '\u0B86\u0B9C\u0BB0\u0BCD\u0BAA\u0BA3\u0BC8 \u0B85\u0BA9\u0BC1\u0BAA\u0BCD\u0BAA\u0BC1',
       'rsvp.success.title': '\u0BA8\u0BA8\u0BCD\u0BB1\u0BBF!',
@@ -334,6 +336,11 @@
 
     if (!mobile || !/^[0-9]{10}$/.test(mobile)) {
       alert(currentLang === 'en' ? 'Please enter a valid 10-digit mobile number.' : '\u0B9A\u0BC6\u0BB2\u0BCD\u0BB2\u0BC1\u0BAA\u0B9F\u0BBF\u0BAF\u0BBE\u0BA9 10 \u0B87\u0BB2\u0B95\u0BCD\u0B95\u0BA4\u0BCD\u0BA4\u0BBF\u0BA9\u0BCD \u0B95\u0BC8\u0BAF\u0B9F\u0BC8 \u0B8E\u0BA3\u0BCD\u0BA3\u0BC8 \u0B89\u0BB3\u0BCD\u0BB3\u0BBF\u0B9F\u0BB5\u0BC1\u0BAE\u0BCD.');
+      return;
+    }
+
+    if (!guests) {
+      alert(currentLang === 'en' ? 'Please select number of guests.' : '\u0B85\u0BA4\u0BBF\u0BA4\u0BBF\u0B95\u0BB3\u0BBF\u0BA9\u0BCD \u0B8E\u0BA3\u0BCD\u0BA3\u0BBF\u0B95\u0BCD\u0B95\u0BC8\u0BAF\u0BC8 \u0BA4\u0BC7\u0BB0\u0BCD\u0BA8\u0BCD\u0BA4\u0BC6\u0B9F\u0BC1\u0B95\u0BCD\u0B95\u0BB5\u0BC1\u0BAE\u0BCD.');
       return;
     }
 
