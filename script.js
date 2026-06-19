@@ -321,6 +321,15 @@
   /* ==========================================
      RSVP FORM
      ========================================== */
+
+  /* Guest count select: toggle floating label */
+  $('#guestCount').addEventListener('change', function () {
+    this.classList.toggle('has-value', this.value !== '');
+  });
+  if ($('#guestCount').value !== '') {
+    $('#guestCount').classList.add('has-value');
+  }
+
   rsvpForm.addEventListener('submit', (e) => {
     e.preventDefault();
 
