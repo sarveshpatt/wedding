@@ -13,6 +13,7 @@
     en: {
       'names.groom': 'Sarvesh',
       'names.bride': 'Harshadha',
+      'nav.logo': 'S ♡ H',
       'nav.story': 'Our Story',
       'nav.events': 'Events',
       'nav.venue': 'Venue',
@@ -77,6 +78,7 @@
     ta: {
       'names.groom': '\u0B9A\u0BB0\u0BCD\u0BB5\u0BC7\u0BB7\u0BCD',
       'names.bride': '\u0BB9\u0BB0\u0BCD\u0BB7\u0BA4\u0BCD\u0BA4\u0BBE',
+      'nav.logo': '\u0B9A \u2661 \u0BB9',
       'nav.story': '\u0B8E\u0B99\u0BCD\u0B95\u0BB3\u0BCD \u0B95\u0BA4\u0BC8',
       'nav.events': '\u0BA8\u0BBF\u0B95\u0BB4\u0BCD\u0BB5\u0BC1\u0B95\u0BB3\u0BCD',
       'nav.venue': '\u0B87\u0B9F\u0BAE\u0BCD',
