@@ -904,26 +904,23 @@ html[data-lang="ta"] .lang-toggle .lang-ta { display: none; }
 }
 
 .form-group {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .form-group label {
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0.9rem;
-  color: var(--text-light);
-  pointer-events: none;
-  transition: var(--transition);
-  background: transparent;
-  padding: 0 4px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  letter-spacing: 0.5px;
+  order: -1;
 }
 
 .form-group input,
 .form-group select {
   width: 100%;
-  padding: 18px 16px 14px;
+  padding: 14px 16px;
   border: 1.5px solid var(--border-light);
   border-radius: var(--radius-sm);
   background: var(--white);
@@ -942,15 +939,7 @@ html[data-lang="ta"] .lang-toggle .lang-ta { display: none; }
   padding-right: 40px;
 }
 
-.form-group select:not(.has-value) {
-  color: transparent;
-}
-
 .form-group select option {
-  color: var(--text-primary);
-}
-
-.form-group select.has-value {
   color: var(--text-primary);
 }
 
@@ -958,26 +947,6 @@ html[data-lang="ta"] .lang-toggle .lang-ta { display: none; }
 .form-group select:focus {
   border-color: var(--gold-300);
   box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.12);
-}
-
-.form-group input:focus + label,
-.form-group input:not(:placeholder-shown) + label,
-.form-group select.has-value + label,
-.form-group select:focus + label {
-  top: 2px;
-  transform: translateY(0);
-  font-size: 0.7rem;
-  color: var(--gold-400);
-  background: var(--white);
-}
-
-.form-group input:focus + label,
-.form-group select:focus + label {
-  color: var(--gold-500);
-}
-
-.form-focus {
-  display: none;
 }
 
 .checkbox-group {

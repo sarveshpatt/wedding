@@ -124,7 +124,7 @@
       'rsvp.name': '\u0B89\u0B99\u0BCD\u0B95\u0BB3\u0BCD \u0BAA\u0BC6\u0BAF\u0BB0\u0BCD',
       'rsvp.mobile': '\u0B95\u0BC8\u0BAF\u0B9F\u0BC8 \u0B8E\u0BA3\u0BCD',
       'rsvp.guests': '\u0BB5\u0BB0\u0BC1\u0B95\u0BC8\u0BAF\u0BBE\u0BB3\u0BB0\u0BCD\u0B95\u0BB3\u0BBF\u0BA9\u0BCD \u0B8E\u0BA3\u0BCD\u0BA3\u0BBF\u0B95\u0BCD\u0B95\u0BC8',
-      'rsvp.selectGuests': '\u0BA4\u0BC7\u0BB0\u0BCD\u0BB5\u0BC1 \u0B9A\u0BC6\u0BAF\u0BCD\u0BAF\u0B95\u0BCD\u0B95\u0BC2\u0B9F\u0BBF\u0BAF\u0BA4\u0BC1',
+      'rsvp.selectGuests': '\u0BA4\u0BC7\u0BB0\u0BCD\u0BA8\u0BCD\u0BA4\u0BC6\u0B9F\u0BC1\u0B95\u0BCD\u0B95',
       'rsvp.attending': '\u0BA8\u0BBE\u0BA9\u0BCD \u0B95\u0BB2\u0BA8\u0BCD\u0BA4\u0BC1 \u0B95\u0BCA\u0BB3\u0BCD\u0BB5\u0BC7\u0BA9\u0BCD',
       'rsvp.submit': '\u0B86\u0B9C\u0BB0\u0BCD\u0BAA\u0BA3\u0BC8 \u0B85\u0BA9\u0BC1\u0BAA\u0BCD\u0BAA\u0BC1',
       'rsvp.success.title': '\u0BA8\u0BA8\u0BCD\u0BB1\u0BBF!',
@@ -321,14 +321,6 @@
   /* ==========================================
      RSVP FORM
      ========================================== */
-
-  /* Guest count select: toggle floating label */
-  $('#guestCount').addEventListener('change', function () {
-    this.classList.toggle('has-value', this.value !== '');
-  });
-  if ($('#guestCount').value !== '') {
-    $('#guestCount').classList.add('has-value');
-  }
 
   rsvpForm.addEventListener('submit', (e) => {
     e.preventDefault();
