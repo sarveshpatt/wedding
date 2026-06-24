@@ -1324,6 +1324,38 @@ html[data-lang="ta"] .lang-toggle .lang-ta { display: none; }
   }
 }
 
+/* Falling Petals */
+@keyframes petalFall {
+  0% {
+    transform: translateY(-10vh) translateX(0) rotate(0deg);
+    opacity: 0.8;
+  }
+  25% {
+    transform: translateY(25vh) translateX(var(--drift-1, 20px)) rotate(120deg);
+  }
+  50% {
+    transform: translateY(50vh) translateX(var(--drift-2, -15px)) rotate(240deg);
+  }
+  75% {
+    transform: translateY(75vh) translateX(var(--drift-3, 25px)) rotate(360deg);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(110vh) translateX(var(--drift-4, -10px)) rotate(480deg);
+    opacity: 0;
+  }
+}
+
+.petal {
+  position: fixed;
+  top: -20px;
+  z-index: 9999;
+  border-radius: 50% 0 50% 0;
+  pointer-events: none;
+  animation: petalFall var(--duration, 6s) var(--delay, 0s) linear forwards;
+  opacity: 0;
+}
+
 /* ==========================================
    RESPONSIVE
    ========================================== */

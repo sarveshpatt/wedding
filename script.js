@@ -254,6 +254,50 @@
     invitationCard.classList.toggle('open');
   });
 
+  /* Falling Petals on first open */
+  let petalsShown = false;
+
+  function createPetals() {
+    if (petalsShown) return;
+    petalsShown = true;
+
+    const colors = ['#E8C76A', '#DBAF4A', '#CCA050', '#B8903A', '#F5D76E', '#F0C75E', '#E6B84E'];
+
+    for (let i = 0; i < 50; i++) {
+      const petal = document.createElement('div');
+      petal.className = 'petal';
+
+      const size = 6 + Math.random() * 10;
+      const left = Math.random() * 100;
+      const delay = Math.random() * 4;
+      const duration = 4 + Math.random() * 4;
+      const color = colors[Math.floor(Math.random() * colors.length)];
+      const d1 = (Math.random() - 0.5) * 60;
+      const d2 = (Math.random() - 0.5) * 60;
+      const d3 = (Math.random() - 0.5) * 60;
+      const d4 = (Math.random() - 0.5) * 60;
+
+      petal.style.cssText = `
+        left: ${left}%;
+        width: ${size}px;
+        height: ${size * 1.4}px;
+        background: ${color};
+        --delay: ${delay}s;
+        --duration: ${duration}s;
+        --drift-1: ${d1}px;
+        --drift-2: ${d2}px;
+        --drift-3: ${d3}px;
+        --drift-4: ${d4}px;
+      `;
+
+      document.body.appendChild(petal);
+
+      setTimeout(() => petal.remove(), (duration + delay) * 1000 + 500);
+    }
+  }
+
+  heroOpenBtn.addEventListener('click', createPetals);
+
   /* ==========================================
      COUNTDOWN
      ========================================== */
