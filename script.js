@@ -30,11 +30,11 @@
       'story.tag': 'Our Journey',
       'story.title': 'The Love Story',
       'story.milestone1.title': 'How We Met',
-      'story.milestone1.desc': 'Two souls destined to find each other, brought together by the beautiful tapestry of fate. Our journey began with a smile that promised forever.',
+      'story.milestone1.desc': 'Our journey began with a simple meeting arranged by our families. Neither of us knew what the future had in store, but that one meeting became the beginning of something beautiful. What started with a conversation slowly turned into countless phone calls, shared smiles, and a comfort that grew stronger every day. Before we knew it, we had found not only a life partner, but also a best friend in each other.',
       'story.milestone2.title': 'The Proposal',
-      'story.milestone2.desc': 'A moment suspended in time, where words turned into promises and two hearts decided to beat as one. The beginning of our forever.',
+      'story.milestone2.desc': 'There was no grand proposal or perfect movie-like moment. Instead, our story was built through trust, understanding, and the little moments we shared along the way. Through every conversation, every sunflower smile, and every memory we created together, we found ourselves choosing each other more and more with each passing day. Somewhere in that journey, love quietly found its place in our hearts.',
       'story.milestone3.title': 'The Wedding',
-      'story.milestone3.desc': 'Surrounded by loved ones, under the auspicious heavens, we unite in the sacred bond of matrimony. A celebration of love, culture, and togetherness.',
+      'story.milestone3.desc': 'Today, with the blessings of our families and the love of those who mean the most to us, we begin a new chapter together. As we celebrate this special day, we look forward to a lifetime filled with love, laughter, companionship, and countless beautiful memories. We are grateful for everyone who has been a part of our journey, and we are excited to begin our forever together.',
       'countdown.title': 'Counting Down to Forever',
       'countdown.days': 'Days',
       'countdown.hours': 'Hours',
@@ -42,12 +42,24 @@
       'countdown.seconds': 'Seconds',
       'events.tag': 'Save the Dates',
       'events.title': 'Wedding Events',
+      'events.day1': 'Day 1 \u2014 19 November 2026',
+      'events.day2': 'Day 2 \u2014 20 November 2026',
+      'events.nitchiyathartham': 'Nitchiyathartham',
+      'events.nitchiyathartham.title': 'Engagement Ceremony',
+      'events.patniSeer': 'Patni Seer',
+      'events.patniSeer.title': 'Patni Seer',
+      'events.muhurthakaal': 'Muhurthakaal',
+      'events.muhurthakaal.title': 'Muhurthakaal',
       'events.reception.label': 'Reception',
-      'events.reception.title': 'Evening Reception',
+      'events.reception.title': 'Reception',
       'events.reception.venue': 'OSBS Mahal, Coimbatore',
-      'events.wedding.label': 'Wedding',
-      'events.wedding.title': 'Sacred Wedding Ceremony',
-      'events.wedding.venue': 'OSBS Mahal, Coimbatore',
+      'events.muhurtham': 'Muhurtham',
+      'events.muhurtham.title': 'Muhurtham',
+      'events.muhurtham.venue': 'Arulmigu Kalyana Subramaniya Swamy Temple, Kumarankundru',
+      'events.returnToMandapam': 'Wedding Photoshoot',
+      'events.returnToMandapam.title': 'Wedding Photoshoot',
+      'events.maruSaradu': 'Maru Saradu',
+      'events.maruSaradu.title': 'Maru Saradu',
       'venue.tag': 'The Venue',
       'venue.title': 'OSBS Mahal',
       'venue.address': 'Mathampalayam, Mettupalayam Road,\nCoimbatore, Tamil Nadu, India',
@@ -105,16 +117,28 @@
       'countdown.hours': '\u0BAE\u0BA3\u0BBF\u0BA4\u0BCD\u0BA4\u0BBF\u0B99\u0BCD\u0B95\u0BB3\u0BCD',
       'countdown.minutes': '\u0BA8\u0BBF\u0BAE\u0BBF\u0B9F\u0BAE\u0BCD',
       'countdown.seconds': '\u0BB5\u0BBF\u0BA9\u0BBE\u0B9F\u0BBF\u0B95\u0BB3\u0BCD',
-      'events.tag': '\u0BA4\u0BC7\u0BA4\u0BBF\u0B95\u0BB3\u0BC8 \u0B9A\u0BC7\u0BAE\u0BBF\u0B95\u0BCD\u0B95\u0BB5\u0BC1\u0BAE\u0BCD',
-      'events.title': '\u0BA4\u0BBF\u0BB0\u0BC1\u0BAE\u0BA3 \u0BA8\u0BBF\u0B95\u0BB4\u0BCD\u0BB5\u0BC1\u0B95\u0BB3\u0BCD',
-      'events.reception.label': '\u0BB5\u0BB0\u0BB5\u0BC7\u0BB1\u0BCD\u0BAA\u0BC1',
-      'events.reception.title': '\u0BAE\u0BBE\u0BB2\u0BC8 \u0BB5\u0BB0\u0BB5\u0BC7\u0BB1\u0BCD\u0BAA\u0BC1',
-      'events.reception.venue': '\u0B8E\u0BB8\u0BCD.\u0BAA\u0BBF.\u0B8E\u0BB8\u0BCD \u0BAE\u0BB9\u0BB2\u0BCD, \u0B95\u0BCB\u0BB5\u0BC8',
-      'events.wedding.label': '\u0BA4\u0BBF\u0BB0\u0BC1\u0BAE\u0BA3\u0BAE\u0BCD',
-      'events.wedding.title': '\u0BA4\u0BBF\u0BB0\u0BC1\u0BAE\u0BA3 \u0B9A\u0B9F\u0B99\u0BCD\u0B95\u0BC1',
-      'events.wedding.venue': '\u0B8E\u0BB8\u0BCD.\u0BAA\u0BBF.\u0B8E\u0BB8\u0BCD \u0BAE\u0BB9\u0BB2\u0BCD, \u0B95\u0BCB\u0BB5\u0BC8',
+      'events.tag': 'தேதிகளை சேமிக்கவும்',
+      'events.title': 'திருமண நிகழ்வுகள்',
+      'events.day1': 'நாள் 1 — 19 நவம்பர் 2026',
+      'events.day2': 'நாள் 2 — 20 நவம்பர் 2026',
+      'events.nitchiyathartham': 'நிச்சயதார்த்தம்',
+      'events.nitchiyathartham.title': 'நிச்சயதார்த்த விழா',
+      'events.patniSeer': 'பட்டினிச் சீர்',
+      'events.patniSeer.title': 'பட்டினிச் சீர்',
+      'events.muhurthakaal': 'முகூர்த்த கால்',
+      'events.muhurthakaal.title': 'முகூர்த்த கால்',
+      'events.reception.label': 'வரவேற்பு',
+      'events.reception.title': 'வரவேற்பு',
+      'events.reception.venue': 'ஓ.எஸ்.பி.எஸ் மஹல், கோவை',
+      'events.muhurtham': 'முகூர்த்தம்',
+      'events.muhurtham.title': 'முகூர்த்தம்',
+      'events.muhurtham.venue': 'அருள்மிகு கல்யாண சுப்ரமணிய சுவாமி திருக்கோயில், குமரன்குன்று',
+      'events.returnToMandapam': 'திருமண புகைப்படம்',
+      'events.returnToMandapam.title': 'திருமண புகைப்படம்',
+      'events.maruSaradu': 'மருசரடு',
+      'events.maruSaradu.title': 'மருசரடு',
       'venue.tag': '\u0B87\u0B9F\u0BAE\u0BCD',
-      'venue.title': '\u0B8E\u0BB8\u0BCD.\u0BAA\u0BBF.\u0B8E\u0BB8\u0BCD \u0BAE\u0BB9\u0BB2\u0BCD',
+      'venue.title': '\u0B93.\u0B8E\u0BB8\u0BCD.\u0BAA\u0BBF.\u0B8E\u0BB8\u0BCD \u0BAE\u0BB9\u0BB2\u0BCD',
       'venue.address': '\u0BAE\u0BA4\u0BCD\u0BA4\u0BAE\u0BCD\u0BAA\u0BBE\u0BB3\u0BAF\u0BAE\u0BCD, \u0BAE\u0BC6\u0B9F\u0BCD\u0B9F\u0BC1\u0BAA\u0BBE\u0BB3\u0BAF\u0BAE\u0BCD \u0B9A\u0BBE\u0BB2\u0BC8,\n\u0B95\u0BCB\u0BB5\u0BC8, \u0BA4\u0BAE\u0BBF\u0BB4\u0BA8\u0BBE\u0B9F\u0BC1, \u0B87\u0BA8\u0BCD\u0BA4\u0BBF\u0BAF\u0BBE',
       'venue.directions': '\u0BB5\u0BB4\u0BBF\u0B95\u0BB3\u0BC8\u0BAA\u0BCD \u0BAA\u0BBE\u0BB0\u0BCD',
       'gallery.tag': '\u0BA8\u0BBF\u0BA9\u0BC8\u0BB5\u0BC1\u0B95\u0BB3\u0BCD',
@@ -129,7 +153,7 @@
       'rsvp.selectGuests': '\u0BA4\u0BC7\u0BB0\u0BCD\u0BA8\u0BCD\u0BA4\u0BC6\u0B9F\u0BC1\u0B95\u0BCD\u0B95',
       'rsvp.attending': '\u0BA8\u0BBE\u0BA9\u0BCD \u0B95\u0BB2\u0BA8\u0BCD\u0BA4\u0BC1 \u0B95\u0BCA\u0BB3\u0BCD\u0BB5\u0BC7\u0BA9\u0BCD',
       'rsvp.submit': '\u0BAA\u0BA4\u0BBF\u0BB2\u0BCD \u0B85\u0BA9\u0BC1\u0BAA\u0BCD\u0BAA\u0BC1',
-      'rsvp.success.title': '\u0BA8\u0BA8\u0BCD\u0BB1\u0BBF!',
+      'rsvp.success.title': '\u0BA8\u0BA9\u0BCD\u0BB1\u0BBF!',
       'rsvp.success.desc': '\u0B89\u0B99\u0BCD\u0B95\u0BB3\u0BCD \u0BAA\u0BA4\u0BBF\u0BB2\u0BCD \u0BAA\u0BA4\u0BBF\u0BB5\u0BC1 \u0B9A\u0BC6\u0BAF\u0BCD\u0BAF\u0BAA\u0BCD\u0BAA\u0B9F\u0BCD\u0B9F\u0BC1\u0BB3\u0BCD\u0BB3\u0BA4\u0BC1. \u0B89\u0B99\u0BCD\u0B95\u0BB3\u0BC1\u0B9F\u0BA9\u0BCD \u0B95\u0BCA\u0BA3\u0BCD\u0B9F\u0BBE\u0B9F\u0BBF\u0BAA\u0BCD\u0BAA\u0BA4\u0BB1\u0BCD\u0B95\u0BC1 \u0BA8\u0BBE\u0B99\u0BCD\u0B95\u0BB3\u0BCD \u0B8E\u0BA4\u0BBF\u0BB0\u0BCD\u0BAA\u0BBE\u0BB0\u0BCD\u0B95\u0BCD\u0B95\u0BBF\u0BB1\u0BCB\u0BAE\u0BCD!',
       'contact.tag': '\u0BA4\u0BCA\u0B9F\u0BB0\u0BCD\u0BAA\u0BC1 \u0B95\u0BCA\u0BB3\u0BCD\u0BB3',
       'contact.title': '\u0B8E\u0B99\u0BCD\u0B95\u0BB3\u0BC8 \u0BA4\u0BCA\u0B9F\u0BB0\u0BCD\u0B95\u0BB5\u0BC1\u0BAE\u0BCD',
@@ -324,7 +348,7 @@
      RSVP FORM
      ========================================== */
 
-  rsvpForm.addEventListener('submit', (e) => {
+  rsvpForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
     const name = $('#guestName').value.trim();
@@ -347,24 +371,45 @@
       return;
     }
 
-    const formData = {
-      name,
-      mobile,
-      guests,
-      attending,
-      timestamp: new Date().toISOString(),
-    };
+    const submitBtn = rsvpForm.querySelector('.rsvp-submit');
+    const submitSpan = submitBtn.querySelector('span:first-child');
+    submitBtn.disabled = true;
+    if (submitSpan) submitSpan.textContent = currentLang === 'en' ? 'Sending\u2026' : '\u0B85\u0BA9\u0BC1\u0BAA\u0BCD\u0BAA\u0BC1\u0B95\u0BBF\u0BB1\u0BA4\u0BC1\u2026';
 
-    console.log('RSVP Data:', formData);
+    const formData = new FormData(rsvpForm);
+    formData.set('attending', attending ? 'Yes' : 'No');
 
-    rsvpForm.reset();
-    rsvpForm.style.display = 'none';
-    rsvpSuccess.classList.add('active');
+    try {
+      const response = await fetch('https://formspree.io/f/xwvjgeba', {
+        method: 'POST',
+        body: formData,
+        headers: { Accept: 'application/json' },
+      });
 
-    /* Scroll to success */
-    setTimeout(() => {
-      rsvpSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
-    }, 100);
+      if (response.ok) {
+        rsvpForm.reset();
+        rsvpForm.style.display = 'none';
+        rsvpSuccess.classList.add('active');
+        setTimeout(() => {
+          rsvpSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+      } else {
+        alert(
+          currentLang === 'en'
+            ? 'Something went wrong. Please try again or contact us directly.'
+            : '\u0B8F\u0BB2\u0BC1\u0BAE\u0BCD \u0BAA\u0BBF\u0BB4\u0BC8 \u0B8F\u0BB1\u0BCD\u0BAA\u0B9F\u0BCD\u0B9F\u0BC1\u0BB3\u0BCD\u0BB3\u0BA4\u0BC1. \u0BA4\u0BAF\u0BB5\u0BC1\u0B9A\u0BC6\u0BAF\u0BCD\u0BA4\u0BC1 \u0BAE\u0BC0\u0BA3\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAE\u0BC1\u0BAF\u0BB1\u0BCD\u0B9A\u0BBF\u0B95\u0BCD\u0B95\u0BB5\u0BC1\u0BAE\u0BCD \u0B85\u0BB2\u0BCD\u0BB2\u0BA4\u0BC1 \u0B8E\u0B99\u0BCD\u0B95\u0BB3\u0BC8 \u0BA8\u0BC7\u0BB0\u0BBF\u0BB2\u0BCD \u0BA4\u0BCA\u0B9F\u0BB0\u0BCD\u0B95\u0BB5\u0BC1\u0BAE\u0BCD.'
+        );
+      }
+    } catch (error) {
+      alert(
+        currentLang === 'en'
+          ? 'Network error. Please check your connection and try again.'
+          : '\u0BA8\u0BC6\u0B9F\u0BCD\u0BB5\u0B9F\u0BCD\u0B95\u0BC1 \u0BAA\u0BBF\u0BB4\u0BC8. \u0B89\u0B99\u0BCD\u0B95\u0BB3\u0BCD \u0B87\u0BA3\u0BC8\u0BAF\u0BAA\u0BCD\u0BAA\u0BC8 \u0B9A\u0BB0\u0BBF\u0BAA\u0BBE\u0BB0\u0BCD\u0BA4\u0BCD\u0BA4\u0BC1 \u0BAE\u0BC0\u0BA3\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAE\u0BC1\u0BAF\u0BB1\u0BCD\u0B9A\u0BBF\u0B95\u0BCD\u0B95\u0BB5\u0BC1\u0BAE\u0BCD.'
+      );
+    } finally {
+      submitBtn.disabled = false;
+      if (submitSpan) submitSpan.textContent = translations[currentLang]['rsvp.submit'];
+    }
   });
 
 })();
