@@ -261,7 +261,7 @@
     if (petalsShown) return;
     petalsShown = true;
 
-    const colors = ['#E8C76A', '#DBAF4A', '#CCA050', '#B8903A', '#F5D76E', '#F0C75E', '#E6B84E'];
+    const colors = ['#E8C76A', '#DBAF4A', '#CCA050', '#F5D76E', '#F0C75E', '#E6B84E', '#F8BBD0', '#F48FB1', '#F06292', '#EC407A', '#A5D6A7', '#81C784', '#66BB6A', '#CE93D8', '#BA68C8', '#90CAF9', '#64B5F6', '#FFCC80', '#FFAB91'];
 
     for (let i = 0; i < 50; i++) {
       const petal = document.createElement('div');
