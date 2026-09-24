@@ -380,9 +380,8 @@
     </div>
     <div class="rsvp-content reveal">
       <p class="rsvp-intro" data-i18n="rsvp.intro">Kindly confirm your presence by filling the form below.</p>
-      <form class="rsvp-form" id="rsvpForm" action="https://formspree.io/f/xwvjgeba" method="POST" novalidate>
-        <input type="text" name="_gotcha" style="display:none" />
-        <input type="hidden" name="_subject" value="New RSVP from Wedding Website" />
+      <form class="rsvp-form" id="rsvpForm" novalidate>
+        <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off" />
         <div class="form-group">
           <label for="guestName" data-i18n="rsvp.name">Your Name</label>
           <input type="text" id="guestName" name="name" required />

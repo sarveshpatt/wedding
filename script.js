@@ -392,6 +392,16 @@
      RSVP FORM
      ========================================== */
 
+  // Google Form that stores RSVPs in the linked Google Sheet.
+  // FORM_ID and entry IDs come from the form's "Get pre-filled link".
+  const GOOGLE_FORM_ACTION = 'https://docs.google.com/forms/d/e/1FAIpQLSf3D-I7aP0gDWqbVuDdlYro2SE0SE_kkfrbCqZ8HivbDhb3vA/formResponse';
+  const GOOGLE_FORM_FIELDS = {
+    name: 'entry.1109339169',
+    mobile: 'entry.1484626467',
+    guests: 'entry.19377964',
+    attending: 'entry.914427578',
+  };
+
   rsvpForm.addEventListener('submit', async (e) => {
     e.preventDefault();
 
@@ -420,30 +430,33 @@
     submitBtn.disabled = true;
     if (submitSpan) submitSpan.textContent = currentLang === 'en' ? 'Sending\u2026' : '\u0B85\u0BA9\u0BC1\u0BAA\u0BCD\u0BAA\u0BC1\u0B95\u0BBF\u0BB1\u0BA4\u0BC1\u2026';
 
-    const formData = new FormData(rsvpForm);
-    formData.set('attending', attending ? 'Yes' : 'No');
+    const showSuccess = () => {
+      rsvpForm.reset();
+      rsvpForm.style.display = 'none';
+      rsvpSuccess.classList.add('active');
+      setTimeout(() => {
+        rsvpSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 100);
+    };
+
+    // Honeypot: bots fill the hidden field; pretend success without sending.
+    if (rsvpForm.querySelector('[name="_gotcha"]').value) {
+      showSuccess();
+      return;
+    }
+
+    const body = new URLSearchParams({
+      [GOOGLE_FORM_FIELDS.name]: name,
+      [GOOGLE_FORM_FIELDS.mobile]: mobile,
+      [GOOGLE_FORM_FIELDS.guests]: guests === '6' ? '6+' : guests,
+      [GOOGLE_FORM_FIELDS.attending]: attending ? 'Yes' : 'No',
+    });
 
     try {
-      const response = await fetch('https://formspree.io/f/xwvjgeba', {
-        method: 'POST',
-        body: formData,
-        headers: { Accept: 'application/json' },
-      });
-
-      if (response.ok) {
-        rsvpForm.reset();
-        rsvpForm.style.display = 'none';
-        rsvpSuccess.classList.add('active');
-        setTimeout(() => {
-          rsvpSuccess.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        }, 100);
-      } else {
-        alert(
-          currentLang === 'en'
-            ? 'Something went wrong. Please try again or contact us directly.'
-            : '\u0B8F\u0BB2\u0BC1\u0BAE\u0BCD \u0BAA\u0BBF\u0BB4\u0BC8 \u0B8F\u0BB1\u0BCD\u0BAA\u0B9F\u0BCD\u0B9F\u0BC1\u0BB3\u0BCD\u0BB3\u0BA4\u0BC1. \u0BA4\u0BAF\u0BB5\u0BC1\u0B9A\u0BC6\u0BAF\u0BCD\u0BA4\u0BC1 \u0BAE\u0BC0\u0BA3\u0BCD\u0B9F\u0BC1\u0BAE\u0BCD \u0BAE\u0BC1\u0BAF\u0BB1\u0BCD\u0B9A\u0BBF\u0B95\u0BCD\u0B95\u0BB5\u0BC1\u0BAE\u0BCD \u0B85\u0BB2\u0BCD\u0BB2\u0BA4\u0BC1 \u0B8E\u0B99\u0BCD\u0B95\u0BB3\u0BC8 \u0BA8\u0BC7\u0BB0\u0BBF\u0BB2\u0BCD \u0BA4\u0BCA\u0B9F\u0BB0\u0BCD\u0B95\u0BB5\u0BC1\u0BAE\u0BCD.'
-        );
-      }
+      // Google Forms doesn't send CORS headers, so the response is opaque;
+      // a resolved fetch means the submission reached Google.
+      await fetch(GOOGLE_FORM_ACTION, { method: 'POST', mode: 'no-cors', body });
+      showSuccess();
     } catch (error) {
       alert(
         currentLang === 'en'
