@@ -73,7 +73,6 @@
       'rsvp.name': 'Your Name',
       'rsvp.mobile': 'Mobile Number',
       'rsvp.guests': 'Number of Guests',
-      'rsvp.selectGuests': 'Select',
       'rsvp.attending': 'I will be attending',
       'rsvp.submit': 'Send Response',
       'rsvp.success.title': 'Thank You!',
@@ -150,7 +149,6 @@
       'rsvp.name': '\u0B89\u0B99\u0BCD\u0B95\u0BB3\u0BCD \u0BAA\u0BC6\u0BAF\u0BB0\u0BCD',
       'rsvp.mobile': '\u0B95\u0BC8\u0BAF\u0B9F\u0BC8 \u0B8E\u0BA3\u0BCD',
       'rsvp.guests': '\u0BB5\u0BB0\u0BC1\u0B95\u0BC8\u0BAF\u0BBE\u0BB3\u0BB0\u0BCD\u0B95\u0BB3\u0BBF\u0BA9\u0BCD \u0B8E\u0BA3\u0BCD\u0BA3\u0BBF\u0B95\u0BCD\u0B95\u0BC8',
-      'rsvp.selectGuests': '\u0BA4\u0BC7\u0BB0\u0BCD\u0BA8\u0BCD\u0BA4\u0BC6\u0B9F\u0BC1\u0B95\u0BCD\u0B95',
       'rsvp.attending': '\u0BA8\u0BBE\u0BA9\u0BCD \u0B95\u0BB2\u0BA8\u0BCD\u0BA4\u0BC1 \u0B95\u0BCA\u0BB3\u0BCD\u0BB5\u0BC7\u0BA9\u0BCD',
       'rsvp.submit': '\u0BAA\u0BA4\u0BBF\u0BB2\u0BCD \u0B85\u0BA9\u0BC1\u0BAA\u0BCD\u0BAA\u0BC1',
       'rsvp.success.title': '\u0BA8\u0BA9\u0BCD\u0BB1\u0BBF!',
@@ -407,7 +405,7 @@
 
     const name = $('#guestName').value.trim();
     const mobile = $('#guestMobile').value.trim();
-    const guests = $('#guestCount').value;
+    const guests = $('#guestCount').value.trim();
     const attending = $('#attendingCheck').checked;
 
     if (!name) {
@@ -420,8 +418,8 @@
       return;
     }
 
-    if (!guests) {
-      alert(currentLang === 'en' ? 'Please select number of guests.' : '\u0B85\u0BA4\u0BBF\u0BA4\u0BBF\u0B95\u0BB3\u0BBF\u0BA9\u0BCD \u0B8E\u0BA3\u0BCD\u0BA3\u0BBF\u0B95\u0BCD\u0B95\u0BC8\u0BAF\u0BC8 \u0BA4\u0BC7\u0BB0\u0BCD\u0BA8\u0BCD\u0BA4\u0BC6\u0B9F\u0BC1\u0B95\u0BCD\u0B95\u0BB5\u0BC1\u0BAE\u0BCD.');
+    if (!/^[0-9]+$/.test(guests) || +guests < 1 || +guests > 50) {
+      alert(currentLang === 'en' ? 'Please enter the number of guests (1\u201350).' : '\u0B85\u0BA4\u0BBF\u0BA4\u0BBF\u0B95\u0BB3\u0BBF\u0BA9\u0BCD \u0B8E\u0BA3\u0BCD\u0BA3\u0BBF\u0B95\u0BCD\u0B95\u0BC8\u0BAF\u0BC8 \u0B89\u0BB3\u0BCD\u0BB3\u0BBF\u0B9F\u0BB5\u0BC1\u0BAE\u0BCD (1\u201350).');
       return;
     }
 
@@ -448,7 +446,7 @@
     const body = new URLSearchParams({
       [GOOGLE_FORM_FIELDS.name]: name,
       [GOOGLE_FORM_FIELDS.mobile]: mobile,
-      [GOOGLE_FORM_FIELDS.guests]: guests === '6' ? '6+' : guests,
+      [GOOGLE_FORM_FIELDS.guests]: guests,
       [GOOGLE_FORM_FIELDS.attending]: attending ? 'Yes' : 'No',
     });
 

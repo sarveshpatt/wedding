@@ -392,15 +392,7 @@
         </div>
         <div class="form-group">
           <label for="guestCount" data-i18n="rsvp.guests">Number of Guests</label>
-          <select id="guestCount" name="guests" required>
-            <option value="" disabled selected data-i18n="rsvp.selectGuests">Select</option>
-            <option value="1">1</option>
-            <option value="2">2</option>
-            <option value="3">3</option>
-            <option value="4">4</option>
-            <option value="5">5</option>
-            <option value="6">6+</option>
-          </select>
+          <input type="number" id="guestCount" name="guests" required min="1" max="50" step="1" inputmode="numeric" />
           <span class="form-focus"></span>
         </div>
         <div class="form-group checkbox-group">
